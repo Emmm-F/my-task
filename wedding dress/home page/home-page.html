@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/public-style.css">
+    <title>首页</title>
+    <style>
+        .b-box{
+            width: 100%;
+            height: 720px;
+        }
+        .banner{
+            width: 100%;
+            height: 720px;
+            background: url('img/banner.jpg') no-repeat center;
+            margin: 0 auto;
+            position: relative;
+        }
+        .banner .b-main{
+            position: absolute;
+            left: 50%;
+            margin-left: -600px;
+            width: 1200px;
+            height: 720px;
+        }
+        .banner .b-main .dots{
+            width: 500px;
+            height: 18px;
+            position: absolute;
+            bottom: 26px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            text-align: center;
+        }
+        .banner .b-main .dots span{
+            width: 8px;
+            height: 8px;
+            background-color: #bebec2;
+            border: 5px solid transparent;
+            border-radius: 50%;
+            margin-left: 10px;
+            display: inline-block;
+            background-clip: content-box;
+            cursor: pointer;
+        }
+        .banner .b-main .dots .d1:hover{
+            border-color: #bebec2;
+            background-color: #fff;
+        }
+        .banner .b-main .dots .d2:hover{
+            border-color: #bebec2;
+            background-color: #fff;
+        }
+        .banner .b-main .dots .d1{
+            margin-left: 0px;
+        }
+        .banner .b-main .left{
+            width: 50px;
+            height: 79px;
+            position: absolute;
+            left: -50px;
+            top: 50%;
+            margin-top: -39.5px;
+            background: url(img/left.png) no-repeat center;
+            cursor: pointer;
+        }
+        .banner .b-main .right{
+            width: 50px;
+            height: 79px;
+            position: absolute;
+            right: -50px;
+            top: 50%;
+            margin-top: -39.5px;
+            background: url(img/right.png) no-repeat center;
+            cursor: pointer;
+        }
+        .weddingdress{
+            position: relative;
+            width: 100%;
+            height: 728px;
+            margin: 0 auto;
+            background-color: #fff;
+        }
+        .weddingdress .main{
+            margin: 0 auto;
+            margin-top: 100px;
+            width: 1200px;
+            height: 564px;
+            position: relative;
+        }
+        .weddingdress .main .header{
+            position: relative;
+            height: 50px;
+            width: 100%;
+        }
+        .weddingdress .main .header .c{
+            position: absolute;
+            top: 0px;
+            left: 50%;
+            transform: translate(-50%,0);
+            font-size: 26px;
+            color: #444444;
+        }
+        .weddingdress .main .header .e{
+            position: absolute;
+            bottom: 0px;
+            left: 50%;
+            transform: translate(-50%,0);
+            font-size: 16px;
+            color: #c1c1c1;
+        }
+        .main .item{
+            position: absolute;
+            top: 130px;
+            left: 50%;
+            transform: translate(-50%,0);
+        }
+        .main .item li{
+            float: left;
+            font-size: 16px;
+            color: #4d4d4d;
+            margin-right: 88px;
+            cursor: pointer;
+        }
+        .main .item li:hover{
+            color: #b9ab77;
+        }
+        .main .item li.active{
+            color: #b9ab77;
+        }
+        .main .item .ex{
+            margin-right: 0px;
+        }
+        .photo{
+            position: absolute;
+            bottom: 0px;
+            left: 50%;
+            transform: translate(-50%,0);
+            width: 1200px;
+            height: 360px;
+        }
+        .photo ul{
+            position: absolute;
+            right: 0px;
+        }
+        .photo ul li{
+            float: left;
+            margin-left: 40px;
+        }
+        .photo ul .p1{
+            margin-left: 0px;
+        }
+        .more{
+            position: absolute;
+            bottom: 60px;
+            left: 50%;
+            transform: translate(-50%,0);
+            width: 148px;
+            height: 42px;
+            border: 1px solid #f5f5f5;
+            text-align: center;
+            font-size: 12px;
+            color: #2d2d2d;
+            line-height: 42px;
+            cursor: pointer;
+        }
+        .jewelryshow{
+            width: 100%;
+            height: 556px;
+            background-color: #f9f9f9;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .jewelryshow .main{
+            width: 1200px;
+            height: 456px;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+        .jewelryshow .main .header{
+            position: relative;
+            height: 50px;
+            width: 100%;
+        }
+        .jewelryshow .main .header .c{
+            position: absolute;
+            top: 0px;
+            left: 50%;
+            transform: translate(-50%,0);
+            font-size: 26px;
+            color: #444444;
+        }
+        .jewelryshow .main .header .e{
+            position: absolute;
+            bottom: 0px;
+            left: 50%;
+            transform: translate(-50%,0);
+            font-size: 16px;
+            color: #c1c1c1;
+        }
+        .jewelryshow .main .photo{
+            width: 1200px;
+            height: 180px;
+            position: absolute;
+            left: 50%;
+            top: 210px;
+            transform: translate(-50%,0);
+        }
+        .latestactivites{
+            height: 876px;
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+        }
+        .latestactivites .main{
+            height: 610px;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+        .latestactivites .main .header{
+            position: relative;
+            height: 50px;
+            width: 100%;
+        }
+        .latestactivites .main .header .c{
+            position: absolute;
+            top: 0px;
+            left: 50%;
+            transform: translate(-50%,0);
+            font-size: 26px;
+            color: #444444;
+        }
+        .latestactivites .main .header .e{
+            position: absolute;
+            bottom: 0px;
+            left: 50%;
+            transform: translate(-50%,0);
+            font-size: 16px;
+            color: #c1c1c1;
+        }
+        .f-banner{
+            width: 100%;
+            height: 354px;
+            background: url('img/fbanner.png') no-repeat center;
+            position: absolute;
+            top: 108px;
+        }
+        .latestactivites .main .photo{
+            width: 1200px;
+            height: 334px;
+            position: absolute;
+            bottom: 164px;
+        }
+        .latestactivites .main .photo ul{
+            position: relative;
+        }
+        .latestactivites .main .photo li{
+            position: relative;
+            float: left;
+            width: 300px;
+            height: 334px;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            
+        }
+        .latestactivites .main .photo li .month{
+            margin-top: 44px;
+            margin-left: 44px;
+            font-size: 30px;
+            color: #8b8b8b;
+        }
+        .latestactivites .main .photo li .title{
+            font-size: 16px;
+            color: #000;
+            margin-top: 48px;
+            margin-left: 44px;
+        }
+        .latestactivites .main .photo li .text{
+            font-size: 12px;
+            color: #000;
+            margin-top: 22px;
+            margin-left: 44px;
+            line-height: 20px;
+        }
+        .latestactivites .main .photo li .p-more{
+            font-size: 14px;
+            color: #bebebe;
+            margin-top: 58px;
+            margin-left: 44px;
+            cursor: pointer;
+        }
+        .latestactivites .main .photo li .year{
+            position: absolute;
+            display: inline;
+            top: 54px;
+            left: 140px;
+            font-size: 14px;
+            color: #8b8b8b;
+        }
+        .latestactivites .main .photo ul .i1{
+            position: absolute;
+            left: 0;
+        }
+        .latestactivites .main .photo ul .i2{
+            position: absolute;
+            left: 300px;
+        }
+        .latestactivites .main .photo ul .i3{
+            position: absolute;
+            left: 600px;
+        }
+        .latestactivites .main .photo ul .i4{
+            position: absolute;
+            right: 0;
+        }
+        .latestactivites .main .photo ul img{
+            display: none;
+        }
+        .latestactivites .main .photo ul .p1:hover + .i1{
+            display: block;
+        }
+        .latestactivites .main .photo ul .p2:hover + .i2{
+            display: block;
+        }
+        .latestactivites .main .photo ul .p3:hover + .i3{
+            display: block;
+        }
+        .latestactivites .main .photo ul .p4:hover + .i4{
+            display: block;
+        }
+        .designers{
+            width: 100%;
+            height: 664px;
+            margin: 0 auto;
+            position: relative;
+            background-color: #4d4d4d;
+            overflow: hidden;
+        }
+        .designers .header{
+            position: relative;
+            margin: 0 auto;
+            margin-top: 100px;
+            width: 100%;
+            height: 50px;
+        }
+        .designers .header .c{
+            position: absolute;
+            top: 0px;
+            left: 50%;
+            transform: translate(-50%,0);
+            font-size: 26px;
+            color: #f5f5f5;
+        }
+        .designers .header .e{
+            position: absolute;
+            bottom: 0px;
+            left: 50%;
+            transform: translate(-50%,0);
+            font-size: 16px;
+            color: #c1c1c1;
+        }
+        .designers .main{
+            width: 1080px;
+            height: 310px;
+            position: absolute;
+            top: 210px;
+            left: 50%;
+            transform: translate(-50%,0);
+        }
+        .designers .main .d1{
+            width: 278px;
+            height: 310px;
+            position: absolute;
+            left: 0px;
+        }
+        .designers .main .d2{
+            width: 278px;
+            height: 310px;
+            position: absolute;
+            left: 50%;
+            margin-left: -139px;
+        }
+        .designers .main .d3{
+            width: 278px;
+            height: 310px;
+            position: absolute;
+            right: 0px;
+        }
+        .designers .main div span{
+            position: absolute;
+            top: 0px;
+            left: 50%;
+            margin-left: -90px;
+            width: 180px;
+            height: 180px;
+            background: url('img/t1.png') no-repeat center;
+        }
+        .designers .main div .name{
+            font-size: 24px;
+            color: #f5f5f5;
+            text-align: center;
+            margin-top: 204px;
+        }
+        .designers .main div .works{
+            font-size: 12px;
+            color: #b9b9b9;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .designers .main div .text{
+            font-size: 12px;
+            color: #b9b9b9;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .designers .main div .m-more{
+            font-size: 12px;
+            color: #bbbaba;
+            position: absolute;
+            left: 50%;
+            bottom: -54px;
+            transform: translate(-50%, 0);
+        }
+        .designers .main div .line{
+            width: 150px;
+            height: 1px;
+            background-color: #bbbaba;
+            display:block;
+            position: absolute;
+            left: 50%;
+            bottom: -82px;
+            transform: translate(-50%, 0);
+        }
+        .bodym-box{
+            width: 100%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-main">
+            <div class="logo"></div>
+            <ul class="nav">
+                <li class="item">
+                    <a href="../home-page.html" class="active">首页</a>
+                    <span class="sy active"></span>
+                </li>
+                <li class="item">
+                    <a href="page/wedding-page.html">婚纱礼服</a>
+                    <span></span>
+                </li>
+                <li class="item">
+                    <a href="page/jewelry-page.html">珠宝配饰</a>
+                    <span></span>
+                </li>
+                <li class="item">
+                    <a href="page/activity-page.html">最新活动</a>
+                    <span></span>
+                </li>
+                <li class="item">
+                    <a href="page/aboutus-page.html">关于我们</a>
+                    <span></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="b-box">
+        <div class="banner">
+            <div class="b-main">
+                <div class="left">
+                </div>
+                <div class="right">
+                </div>
+                <div class="dots">
+                    <span class="d1"></span>
+                    <span class="d2"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bodym-box">
+        <div class="weddingdress">
+            <div class="main">
+                <div class="header">
+                    <span class="c">婚纱礼服</span>
+                    <span class="e">Wedding&nbsp;Dress</span>
+                </div>
+                <ul class="item">
+                    <li class="new active">新品/NEW</li>
+                    <li class="ss">2018春夏</li>
+                    <li class="aw">2018秋冬</li>
+                    <li class="ex">专属定制</li>
+                </ul>
+                <div class="photo">
+                    <ul>
+                        <li class="p1">
+                            <img src="img/photo.jpg" alt="">
+                        </li>
+                        <li class="p2">
+                            <img src="img/photo.jpg" alt="">
+                        </li>
+                        <li class="p3">
+                            <img src="img/photo.jpg" alt="">
+                        </li>
+                        <li class="p4">
+                            <img src="img/photo.jpg" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="more">
+                MORE
+            </div>
+        </div>
+        <div class="jewelryshow">
+            <div class="main">
+                <div class="header">
+                    <span class="c">珠宝配饰</span>
+                    <span class="e">Jewelry&nbsp;Show</span>
+                </div>
+                <div class="photo">
+                    <ul>
+                        <li class="p1">
+                            <img src="img/jsp.jpg" alt="">
+                        </li>
+                        <li class="p2">
+                            <img src="img/jsp.jpg" alt="">
+                        </li>
+                        <li class="p3">
+                            <img src="img/jsp.jpg" alt="">
+                        </li>
+                        <li class="p4">
+                            <img src="img/jsp.jpg" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="more">
+                MORE
+            </div>
+        </div>
+        <div class="latestactivites">
+            <div class="f-banner">
+            </div>
+            <div class="main">
+                <div class="header">
+                    <span class="c">最新活动</span>
+                    <span class="e">Latest&nbsp;Activities</span>
+                </div>
+                <div class="photo">
+                    <ul>
+                        <li class="p1">
+                            <p class="month">06-18</p>
+                            <p class="year">2018</p>
+                            <p class="title">新品发布会</p>
+                            <p class="text">
+                                    伴随着T台两侧色彩趋势报告的发布，</br>
+                                    VERONICA2017婚纱新品发布会正...
+                            </p>
+                            <p class="p-more">
+                                more&nbsp;>
+                            </p>
+                        </li>
+                        <img src="img/li.p.jpg" alt="" class="i1">
+                        <li class="p2">
+                            <p class="month">06-18</p>
+                            <p class="year">2018</p>
+                            <p class="title">新品发布会</p>
+                            <p class="text">
+                                    伴随着T台两侧色彩趋势报告的发布，</br>
+                                    VERONICA2017婚纱新品发布会正...
+                            </p>
+                            <p class="p-more">
+                                more&nbsp;>
+                            </p>
+                        </li>
+                        <img src="img/li.p.jpg" alt="" class="i2">
+                        <li class="p3">
+                            <p class="month">06-18</p>
+                            <p class="year">2018</p>
+                            <p class="title">新品发布会</p>
+                            <p class="text">
+                                    伴随着T台两侧色彩趋势报告的发布，</br>
+                                    VERONICA2017婚纱新品发布会正...
+                            </p>
+                            <p class="p-more">
+                                more&nbsp;>
+                            </p>
+                        </li>
+                        <img src="img/li.p.jpg" alt="" class="i3">
+                        <li class="p4">
+                            <p class="month">06-18</p>
+                            <p class="year">2018</p>
+                            <p class="title">新品发布会</p>
+                            <p class="text">
+                                    伴随着T台两侧色彩趋势报告的发布，</br>
+                                    VERONICA2017婚纱新品发布会正...
+                            </p>
+                            <p class="p-more">
+                                more&nbsp;>
+                            </p>
+                        </li>
+                        <img src="img/li.p.jpg" alt="" class="i4">
+                    </ul>
+                </div>
+            </div>
+            <div class="more">
+                MORE
+            </div>
+        </div>
+        <div class="designers">
+            <div class="header">
+                <p class="c">
+                    设计师
+                </p>
+                <p class="e">
+                    Designers
+                </p>
+            </div>
+            <div class="main">
+                <div class="d1">
+                    <span class="t1"></span>
+                    <p class="name">Jason&nbsp;.&nbsp;W</p>
+                    <p class="works">首席设计师</p>
+                    <p class="text">
+                        法国时装设计师，VERONICA品牌创始人之一，设计
+                        总监，2016福布斯最具影响力的设计师...
+                    </p>
+                    <a href="page/designer-page.html" class="m-more">MORE</a>
+                    <p class="line"></p>
+                </div>
+                <div class="d2">
+                    <span class="t2"></span>
+                    <p class="name">Jason&nbsp;.&nbsp;W</p>
+                    <p class="works">首席设计师</p>
+                    <p class="text">
+                        法国时装设计师，VERONICA品牌创始人之一，设计
+                        总监，2016福布斯最具影响力的设计师...
+                    </p>
+                    <a href="page/designer-page.html" class="m-more">MORE</a>
+                    <p class="line"></p>
+                </div>
+                <div class="d3">
+                    <span class="t3"></span>
+                    <p class="name">Jason&nbsp;.&nbsp;W</p>
+                    <p class="works">首席设计师</p>
+                    <p class="text">
+                        法国时装设计师，VERONICA品牌创始人之一，设计
+                        总监，2016福布斯最具影响力的设计师...
+                    </p>
+                    <a href="page/designer-page.html" class="m-more">MORE</a>
+                    <p class="line"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="main">
+            <p class="left">
+                网站备案号：豫ICP备110121210号</br>增值电信业务经营许可证号：豫B2-20100033
+            </p>
+            <ul class="right">
+                <li>2018 VERONICA</li>
+                <li>联系我们</li>
+                <li>加入我们</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

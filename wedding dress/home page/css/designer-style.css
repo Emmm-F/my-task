@@ -1,0 +1,104 @@
+/* 底部颜色修改 */
+.footer{
+    background-color: #4d4d4d;
+}
+.footer .main .left{
+    color: #ffffff;
+}
+.footer .main .right li{
+    color: #ffffff;
+}
+/* 可通用 */
+.banner{
+    width: 100%;
+    height: 268px;
+    margin: 0 auto;
+    background: url(../img/dsg-banner.jpg) no-repeat center;
+}
+.box{
+    height: 940px;
+    width: 100%;
+}
+.box .b-main{
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.box .b-main .c{
+    font-size: 26px;
+    color: #444444;
+    text-align: center;
+    margin-top: 0px;
+}
+.box .b-main .e{
+    font-size: 16px;
+    color: #c1c1c1;
+    text-align: center;
+    margin-top: 10px;
+}
+.box .b-main ul{
+    width: 1200px;
+    height: 744px;
+    margin-top: 64px;
+}
+.box .b-main ul li{
+    width: 300px;
+    height: 744px;
+    float: left;
+    margin-left: 150px;
+}
+.box .b-main ul .p1{
+    margin-left: 0px;
+}
+.box .b-main ul li .name{
+    font-size: 18px;
+    color: #2e2e2e;
+    text-align: center;
+    margin-top: 40px;
+}
+.box .b-main ul li .works{
+    font-size: 14px;
+    color: #a4a4a4;
+    text-align: center;
+    margin-top: 18px;
+}
+.box .b-main ul li .profile{
+    font-size: 14px;
+    color: #a4a4a4;
+    text-align: center;
+    margin-top: 18px;
+}
+.box .b-main ul li .more{
+    display: block;
+    width: 148px;
+    height: 42px;
+    border: 1px solid #b9ab77;
+    text-align: center;
+    font-size: 12px;
+    color: #b9ab77;
+    line-height: 42px;
+    margin-top: 50px;
+    margin-left: 78px;
+    cursor: pointer;
+    display: none;
+}
+.box .b-main ul li .line{
+    width: 300px;
+    height: 2px;
+    margin-top: 34px;
+    display: block;
+    background-color: #b9ab77;
+    display: none;
+}
+.box .b-main ul li:hover .line{
+    display: block;
+} 
+.box .b-main ul li:hover .more{
+    display: block;
+} 
+.box .b-main ul .p1 .more.active{
+    display: block;
+}
+.box .b-main ul .p1 .line.active{
+    display: block;
+}

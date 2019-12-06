@@ -1,0 +1,177 @@
+/* 底部颜色修改 */
+.footer{
+    background-color: #4d4d4d;
+}
+.footer .main .left{
+    color: #ffffff;
+}
+.footer .main .right li{
+    color: #ffffff;
+}
+/* 可通用 */
+.wed-main{
+    height: 1296px;
+    width: 1200px;
+    position: absolute;
+    left: 50%;
+    top: 180px;
+    transform: translate(-50%,0);
+}
+.wed-main .m-banner1{
+    height: 472px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.wed-main .m-banner1 .text{
+    width: 416px;
+    height: 360px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.wed-main .m-banner1 .text .title{
+    padding-left: 20px;
+    line-height: 70px;
+    width: 228px;
+    height: 70px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font-size: 30px;
+    color: #2a2a2a;
+    border-left: 2px solid #454545;
+}
+.wed-main .m-banner1 .text .title-m{
+    position: absolute;
+    left: 140px;
+    top: 50px;
+    font-size: 16px;
+    color: #4c4c4c;
+}
+.wed-main .m-banner1 .text .price{
+    font-size: 16px;
+    color: #c1c1c1;
+    margin-top: 96px;
+    margin-left: 156px;
+}
+.wed-main .m-banner1 .text .t-text{
+    font-size: 14px;
+    color: #cacaca;
+    margin-top: 30px;
+}
+.wed-main .m-banner1 .text .map{
+    width: 150px;
+    height: 44px;
+    display: block;
+    font-size: 12px;
+    line-height: 44px;
+    color: #2d2d2d;
+    text-align: center;
+    border: 1px solid #f5f5f5;
+    margin-left: 134px;
+    margin-bottom: 60px;
+}
+.wed-main .m-banner2{
+    height: 774px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.wed-main .m-banner2 .text-1{
+    font-size: 14px;
+    color: #6a6a6a;
+    margin-top: 534px;
+}
+.wed-main .m-banner2 .text-2{
+    font-size: 14px;
+    color: #6a6a6a;
+    margin-top: 44px;
+
+}
+.wed-main span{
+    width: 708px;
+    height: 472px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: url('../img/jew1.jpg') no-repeat left;
+}
+.wed-main .box2{
+    background: url('../img/jew2.jpg') no-repeat left;
+}
+.photo{
+    width: 100%;
+    height: 472px;
+    margin: 0 auto;
+    margin-top: 1396px;
+    background-color: #dddddd;
+}
+.photo  .photo-main{
+    width: 1200px;
+    height: 268px;
+    margin: 0 auto;
+    padding-top: 100px;
+    position: relative;
+}
+.photo  .photo-main .picture{
+    width: 1200px;
+    height: 137px;
+    position: absolute;
+    bottom: 60px;
+}
+.photo  .photo-main .picture li{
+    width: 212px;
+    height: 137px;
+    float: left;
+    margin-left: 35px;
+    background: url(../img/jew-p1.jpg) no-repeat center;
+}
+.photo  .photo-main .picture .p1{
+    margin-left: 0px;
+}
+.photo  .photo-main p{
+    display: inline-block;
+    font-size: 12px;
+    color: #929292;
+    padding-left: 12px;
+    padding-right: 12px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    margin-right: 40px;
+}
+.photo  .photo-main span{
+    width: 50px;
+    height: 79px;
+    display: block;
+    cursor: pointer;
+}
+.photo  .photo-main .left{
+    position: absolute;
+    bottom: 84px;
+    left: -64px;
+    background: url(../img/left.png) no-repeat center;
+}
+.photo  .photo-main .right{
+    position: absolute;
+    bottom: 84px;
+    right: -64px;
+    background: url(../img/right.png) no-repeat center;
+}
+.photo .p-more{
+    width: 148px;
+    height: 44px;
+    display: block;
+    text-align: center;
+    line-height: 44px;
+    border: 1px solid #bbbaba;
+    color: #bbbaba;
+    font-size: 12px;
+    margin: 0 auto;
+    cursor: pointer;
+}

@@ -1,0 +1,107 @@
+/* 底部颜色修改 */
+.footer{
+    background-color: #4d4d4d;
+}
+.footer .main .left{
+    color: #ffffff;
+}
+.footer .main .right li{
+    color: #ffffff;
+}
+/* 可通用 */
+.banner{
+    width: 100%;
+    height: 270px;
+    margin: 0 auto;
+    background: url(../img/act-banner.png) no-repeat center;
+}
+.m-box{
+    width: 100%;
+    height: 922px;
+    margin: 0 auto;
+    text-align: center;
+}
+.m-header{
+    text-align: center;
+}
+.m-header .c{
+    font-size: 26px;
+    color: #444444;
+    margin-top: 100px;
+}
+.m-header .e{
+    font-size: 16px;
+    color: #c1c1c1;
+    margin-top: 10px;
+}
+.m-box .main{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.m-box .main:hover{
+    background-color: #444444;
+}
+.m-box .main:hover .box p{
+    color: #ffffff;
+}
+.m-box .m1{
+    margin-top: 60px;
+}
+.m-box .main .box{
+    width: 700px;
+    height: 78px;
+    margin: 0 auto;
+    margin-top: 58px;
+    position: relative;
+}
+.m-box .main .box .month{
+    font-size: 60px;
+    color: #929292;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.m-box .main .box .year{
+    font-size: 16px;
+    color: #929292;
+    position: absolute;
+    left: 130px;
+    top: 66px;
+}
+.m-box .main .box .title{
+    font-size: 16px;
+    color: #000000;
+    position: absolute;
+    left: 208px;
+    top: 0px;
+}
+.m-box .main .box .text{
+    font-size: 12px;
+    color: #4d4d4d;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+.m-box .nav a{
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+    color: #6d6d6d;
+    border: 1px solid #6d6d6d;
+    margin-top: 30px;
+}
+.m-box .nav a:hover{
+    background-color: #6d6d6d;
+    color: #ffffff;
+}
+.m-box .main .box .right{
+    /* display:  */
+    width: 14px;
+    height: 26px;
+    margin-top: 30px;
+    margin-right: -800px;
+}
